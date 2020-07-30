@@ -1,0 +1,67 @@
+.frame {
+    min-height: 100px;
+    display: flex;
+}
+
+.skater {
+    vertical-align: center;
+
+    min-width: 10px;
+    max-width: 10px;
+    min-height: 30px;
+    max-height: 30px;
+
+    border-color: dodgerblue;
+    border-style: solid;
+    border-width: 3px;
+
+    margin: auto;
+}
+
+.board {
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 5px;
+    max-height: 5px;
+
+    border-color: gold;
+    border-style: solid;
+    border-width: 1px;
+
+    background-color: gold;
+
+    position: relative;
+}
+
+.skaterboi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    margin-top: 5%;
+    position: absolute;
+
+    animation: olli 5s infinite;
+    animation-direction: normal;
+}
+
+@keyframes olli {
+    0% {
+        left: 5%;
+        top: 0;
+    }
+    35% {
+        transform: translate(0, 0)
+    }
+    40% {
+        transform: translate(-50%, -75%) rotate(-15deg);
+    }
+    60% {
+        transform: translate(0, 0)
+    }
+    100% {
+        left: 90%;
+        top: 0;
+    }
+}
